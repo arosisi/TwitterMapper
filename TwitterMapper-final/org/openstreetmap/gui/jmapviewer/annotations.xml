@@ -1,0 +1,5 @@
+<root>
+    <item name='org.openstreetmap.gui.jmapviewer.JMapViewer void paintMarker(java.awt.Graphics, org.openstreetmap.gui.jmapviewer.interfaces.MapMarker)'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>

@@ -127,12 +127,13 @@ public class Application extends JFrame {
                 map().setToolTipText("");
                 Set<MapMarker> markers = getMarkersCovering(pos, pixelWidth(p));
                 if (!markers.isEmpty()) {
-                    String text = "";
+                    String text = "<html>";
                     for (MapMarker marker : markers) {
                         MapMarkerPretty markerPretty = (MapMarkerPretty) marker;
-                        text += "<html><p><img src=\"" + markerPretty.getImageURL() + "\">";
+                        text += "<p><img src=" + markerPretty.getImageURL() + ">";
                         text += markerPretty.getText() + "</p>";
                     }
+                    text += "</html>";
                     map().setToolTipText(text);
                 }
             }
